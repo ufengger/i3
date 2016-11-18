@@ -168,6 +168,7 @@ for_window [class="Goldendict"] floating enable; move scratchpad
 
 # autostart
 exec --no-startup-id goldendict
+exec --no-startup-id owncloud
 exec --no-startup-id i3-msg 'workspace 1; exec thunderbird'
 exec --no-startup-id i3-msg 'workspace 2; exec firefox'
 exec --no-startup-id i3-msg 'workspace 3; exec emacs; workspace 1'
