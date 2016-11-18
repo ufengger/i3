@@ -162,6 +162,8 @@ bindsym $mod+F12 exec /usr/bin/pactl set-sink-volume 0 -- '+5%'
 # scratchpad setup
 bindsym Ctrl+F11 [instance="goldendict"] scratchpad show
 bindsym Ctrl+F12 [instance="goldendict"] move scratchpad
+bindsym $mod+minus move scratchpad
+bindsym $mod+equal scratchpad show
 
 # goldendict setup
 for_window [class="Goldendict"] floating enable; move scratchpad
