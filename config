@@ -107,6 +107,7 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 bindsym $mod+n workspace next
+bindsym $mod+q exec quickswitch.py
 bindsym $mod+Shift+n exec --no-startup-id quickswitch.py -e
 bindsym $mod+p workspace prev
 bindsym Mod1+Tab workspace back_and_forth
