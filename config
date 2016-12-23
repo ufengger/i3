@@ -96,6 +96,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
+# using https://github.com/OliverUv/quickswitch-for-i3
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
@@ -109,6 +110,8 @@ bindsym $mod+0 workspace 10
 bindsym $mod+n workspace next
 bindsym $mod+q exec quickswitch.py
 bindsym $mod+Shift+n exec --no-startup-id quickswitch.py -e
+bindsym $mod+Shift+m exec --no-startup-id quickswitch.py -m
+bindsym $mod+Shift+i exec --no-startup-id quickswitch.py -j
 bindsym $mod+p workspace prev
 bindsym Mod1+Tab workspace back_and_forth
 
