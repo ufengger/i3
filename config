@@ -176,7 +176,7 @@ for_window [class="Goldendict"] floating enable; move scratchpad
 exec --no-startup-id goldendict
 exec --no-startup-id owncloud
 exec --no-startup-id ~/.nutstore/dist/bin/nutstore-pydaemon.py
-exec --no-startup-id i3-msg 'workspace 1; exec emacs'
+# exec --no-startup-id i3-msg 'workspace 1; exec emacs'
 exec --no-startup-id setxkbmap -option ctrl:nocaps
 
 # Start i3bar to display a workspace bar (plus the system information i3status
