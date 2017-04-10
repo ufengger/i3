@@ -159,6 +159,16 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+mode "move-floating" {
+        bindsym h move left 20px
+        bindsym l move right 20px
+        bindsym j move down 20px
+        bindsym k mode up 20px
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+m mode "move-floating"
+
 # pulse audio volume control
 bindsym $mod+F11 exec /usr/bin/pactl set-sink-volume 0 -- '-5%'
 bindsym $mod+F12 exec /usr/bin/pactl set-sink-volume 0 -- '+5%'
