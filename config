@@ -160,10 +160,10 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 mode "move-floating" {
-        bindsym h move left 20px
-        bindsym l move right 20px
-        bindsym j move down 20px
-        bindsym k mode up 20px
+        bindsym h move left 50px
+        bindsym l move right 50px
+        bindsym j move down 50px
+        bindsym k move up 50px
         bindsym Escape mode "default"
 }
 
