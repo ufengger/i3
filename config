@@ -172,6 +172,8 @@ bindsym $mod+m mode "move-floating"
 # pulse audio volume control
 bindsym $mod+F11 exec /usr/bin/pactl set-sink-volume 0 -- '-5%'
 bindsym $mod+F12 exec /usr/bin/pactl set-sink-volume 0 -- '+5%'
+bindsym F11 exec /usr/bin/pactl set-sink-volume 1 '-5%'
+bindsym F12 exec /usr/bin/pactl set-sink-volume 1 '+5%'
 
 # scratchpad setup
 bindsym Ctrl+F11 [instance="goldendict"] scratchpad show
