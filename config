@@ -184,6 +184,9 @@ bindsym $mod+equal scratchpad show
 # goldendict setup
 for_window [class="Goldendict"] floating enable; move scratchpad
 
+# matlab figures
+for_window [title="^Figure*" class="^com-mathworks*"] floating enable
+
 # autostart
 exec --no-startup-id goldendict
 exec --no-startup-id owncloud
