@@ -31,6 +31,8 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
+# start a terminal in vertical orientation
+bindsym $mod+Shift+Return split v; exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
