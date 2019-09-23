@@ -201,11 +201,11 @@ for_window [class="Goldendict"] floating enable; move scratchpad
 for_window [title="^Figure*" class="^com-mathworks*"] floating enable
 
 # autostart
-exec --no-startup-id goldendict
+# exec --no-startup-id goldendict
 exec --no-startup-id ~/.nutstore/dist/bin/nutstore-pydaemon.py
 # exec --no-startup-id i3-msg 'workspace 1; exec emacs'
 # see /usr/share/X11/xkb/rules/base.lst
-exec --no-startup-id setxkbmap -option ctrl:ralt_rctrl -option ctrl:nocaps
+# exec --no-startup-id setxkbmap -option ctrl:ralt_rctrl -option ctrl:nocaps
 # see https://www.cnblogs.com/yinheyi/p/10146900.html
 # exec --no-startup-id xmodmap -e "keycode 9 = Escape asciitilde Escape"
 exec --no-startup-id ~/.config/i3/misc.sh
