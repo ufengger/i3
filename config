@@ -95,7 +95,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+# bindsym $mod+d focus child
 
 set $ws1 "1: Emacs"
 set $ws2 2
@@ -107,6 +107,10 @@ set $ws7 7
 set $ws8 8
 set $ws9 "9: Firefox"
 set $ws0 10
+set $wsx "11: external"
+
+# set workspace for external output
+workspace $wsx output HDMI-2
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -119,6 +123,7 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws0
+bindsym $mod+i workspace $wsx
 bindsym $mod+n workspace next
 bindsym $mod+q exec rofi -show window
 bindsym $mod+p workspace prev
@@ -135,6 +140,10 @@ bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws0; workspace $ws0
+bindsym $mod+Shift+i move container to workspace $wsx; workspace $wsx
+
+# move the current workspace to the next output
+bindsym $mod+semicolon move workspace to output right
 
 assign [class="Emacs"] $ws1
 assign [class="Firefox"] $ws9
@@ -209,6 +218,7 @@ exec --no-startup-id ~/.nutstore/dist/bin/nutstore-pydaemon.py
 # see https://www.cnblogs.com/yinheyi/p/10146900.html
 # exec --no-startup-id xmodmap -e "keycode 9 = Escape asciitilde Escape"
 exec --no-startup-id ~/.config/i3/misc.sh
+exec --no-startup-id ~/.config/i3/multimonitor.sh
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
