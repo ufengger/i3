@@ -142,8 +142,10 @@ bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws0; workspace $ws0
 bindsym $mod+Shift+i move container to workspace $wsx; workspace $wsx
 
+# focus the output right to the current one
+bindsym $mod+semicolon focus output right
 # move the current workspace to the next output
-bindsym $mod+semicolon move workspace to output right
+bindsym $mod+Shift+semicolon move workspace to output right
 
 assign [class="Emacs"] $ws1
 assign [class="Firefox"] $ws9
