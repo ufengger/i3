@@ -30,9 +30,9 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvt
 # start a terminal in vertical orientation
-bindsym $mod+Shift+Return split v; exec i3-sensible-terminal
+bindsym $mod+Shift+Return split v; exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
