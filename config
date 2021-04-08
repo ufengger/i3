@@ -194,14 +194,14 @@ mode "move-floating" {
 bindsym $mod+m mode "move-floating"
 
 # pulse audio volume control
-bindsym $mod+F11 exec /usr/bin/pactl set-sink-volume 0 -- '-5%'
-bindsym $mod+F12 exec /usr/bin/pactl set-sink-volume 0 -- '+5%'
-bindsym Alt+F11 exec /usr/bin/pactl set-sink-volume 1 '-5%'
-bindsym Alt+F12 exec /usr/bin/pactl set-sink-volume 1 '+5%'
+# bindsym $mod+F11 exec /usr/bin/pactl set-sink-volume 0 -- '-5%'
+# bindsym $mod+F12 exec /usr/bin/pactl set-sink-volume 0 -- '+5%'
+# bindsym Alt+F11 exec /usr/bin/pactl set-sink-volume 1 '-5%'
+# bindsym Alt+F12 exec /usr/bin/pactl set-sink-volume 1 '+5%'
 
 # scratchpad setup
-bindsym Ctrl+F11 [instance="goldendict"] scratchpad show
-bindsym Ctrl+F12 [instance="goldendict"] move scratchpad
+# bindsym Ctrl+F11 [instance="goldendict"] scratchpad show
+# bindsym Ctrl+F12 [instance="goldendict"] move scratchpad
 bindsym $mod+minus move scratchpad
 bindsym $mod+equal scratchpad show
 
@@ -213,7 +213,7 @@ for_window [title="^Figure*" class="^com-mathworks*"] floating enable
 
 # autostart
 # exec --no-startup-id goldendict
-exec --no-startup-id ~/.nutstore/dist/bin/nutstore-pydaemon.py
+# exec --no-startup-id ~/.nutstore/dist/bin/nutstore-pydaemon.py
 # exec --no-startup-id i3-msg 'workspace 1; exec emacs'
 # see /usr/share/X11/xkb/rules/base.lst
 # exec --no-startup-id setxkbmap -option ctrl:ralt_rctrl -option ctrl:nocaps
@@ -224,6 +224,6 @@ exec --no-startup-id ~/.config/i3/multimonitor.sh
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status --config ~/.config/i3/i3status.conf
-}
+# bar {
+#         status_command i3status --config ~/.config/i3/i3status.conf
+# }
