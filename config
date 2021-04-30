@@ -125,7 +125,7 @@ bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws0
 bindsym $mod+i workspace $wsx
 bindsym $mod+n workspace next
-bindsym $mod+q exec rofi -show window
+bindsym $mod+q exec rofi -font 'pango:DejaVu Sans Mono 24' -show window
 bindsym $mod+p workspace prev
 bindsym Mod1+Tab workspace back_and_forth
 
