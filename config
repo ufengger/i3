@@ -31,8 +31,9 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec urxvt
-# start a terminal in vertical orientation
-bindsym $mod+Shift+Return split v; exec urxvt
+# start a floating terminal
+bindsym $mod+Shift+Return exec urxvt -name floating_term
+for_window [class="URxvt" instance="floating"] floating enable
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -103,8 +104,8 @@ set $ws3 "3:      "
 set $ws4 "4:      "
 set $ws5 "5:      "
 set $ws6 "6:      "
-set $ws7 "7:      "
-set $ws8 "8:      "
+set $ws7 "7: WPS  "
+set $ws8 "8: Win  "
 set $ws9 "9: Firefox"
 set $ws0 "10:      "
 set $wsx "11: Exotic"
@@ -149,6 +150,9 @@ bindsym $mod+Shift+semicolon move workspace to output right
 
 assign [class="Emacs"] $ws1
 assign [class="Firefox"] $ws9
+assign [class="Wps"] $ws7
+assign [class="Et"] $ws7
+assign [class="VirtualBox Manager"] $ws8
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
