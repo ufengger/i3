@@ -31,8 +31,9 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
-# start a terminal in vertical orientation
-bindsym $mod+Shift+Return split v; exec i3-sensible-terminal
+# start a floating terminal
+bindsym $mod+Shift+Return exec xfce4-terminal --role=floaterm
+for_window [window_role="floaterm"] floating enable
 
 # kill focused window
 bindsym $mod+Shift+q kill
